@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fresh Salads - Flavors of the Day</title>
+    <link rel="stylesheet" href="fsalad.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Roboto&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <img src="logo.png" alt="Logo" style="height: 60px;">
+        </div>
+        <ul class="nav-links">
+            <li><a href="/index.html" class="link">HOME</a></li>
+            <li><a href="/ABOUT/about.html" class="link">ABOUT</a></li>
+            <li><a href="#" class="link">LOGIN</a></li>
+        </ul>
+    </nav>
+    <header class="salad-header">
+        <h1>Fresh Salads</h1>
+        <p>Experience the vibrant flavors of India with our refreshing salad recipes.</p>
+    </header>
+
+    <section class="about-salad">
+        <div class="about-salad-content">
+            <h2>About Salad</h2>
+            <p>A salad is a dish consisting of mixed, mostly natural ingredients. They are typically served chilled or at room temperature, though some can be served warm. Salads often include leafy greens, vegetables, fruits, cheese, nuts, and seeds. They can be a light and refreshing appetizer, a satisfying main course, or a healthy side dish.</p>
+            <p>Salads offer a wide variety of flavors, textures, and nutritional benefits. They are a great source of vitamins, minerals, and fiber. With endless combinations of ingredients, salads can be customized to suit any taste or dietary preference.</p>
+        </div>
+    </section>
+
+    <section class="recipes">
+        <h2>Indian Salad Recipes</h2>
+        <div class="recipe-cards" id="recipe-cards">
+            </div>
+    </section>
+
+    <div id="recipe-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h3 id="recipe-name"></h3>
+            <h4>Ingredients:</h4>
+            <p id="recipe-ingredients"></p>
+            <h4>Instructions:</h4>
+            <p id="recipe-instructions"></p>
+        </div>
+    </div>
+    <script src="fsalad.js"></script>
+</body>
+</html>

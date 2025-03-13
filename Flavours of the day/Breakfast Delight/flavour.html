@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sunrise Delights - Flavors of the Day</title>
+    <link rel="stylesheet" href="brkfast.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <img src="logo.png" alt="Logo" style="height: 60px;">
+        </div>
+        <ul class="nav-links">
+            <li><a href="/index.html" class="link">HOME</a></li>
+            <li><a href="/ABOUT/about.html" class="link">ABOUT</a></li>
+            <li><a href="#" class="link">LOGIN</a></li>
+        </ul>
+    </nav>
+    <header class="salad-header">
+        <h1 class="breakfast-title">Sunrise Delights</h1>
+        <p class="header-paragraph">Awaken your senses with a symphony of Indian morning flavors.<br> Where tradition meets taste, and every bite is a new beginning.</p>
+    </header>
+
+    <section class="about-salad">
+        <div class="about-salad-content">
+            <h2>About Breakfast</h2>
+            <p>Breakfast is the first meal of the day, most often eaten in the early morning before undertaking the day's work. It is considered the most important meal of the day. A healthy breakfast provides energy and nutrients that set the tone for your day.</p>
+            <p>Breakfast offers a wide variety of flavors, textures, and nutritional benefits. It is a great source of essential nutrients, vitamins, and minerals. With endless combinations of ingredients, breakfasts can be customized to suit any taste or dietary preference. Whether you prefer sweet or savory, there's a breakfast recipe for everyone.</p>
+        </div>
+    </section>
+
+    <section class="recipes">
+        <h2>Indian Breakfast Recipes</h2>
+        <div class="recipe-cards" id="recipe-cards">
+        </div>
+    </section>
+
+    <div id="recipe-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div class="modal-recipe-details">
+                <div class="modal-video-container">
+                    <video id="recipe-video" controls></video>
+                </div>
+                <div class="modal-text-content">
+                    <h3 id="recipe-name"></h3>
+                    <h4>Ingredients:</h4>
+                    <p id="recipe-ingredients"></p>
+                    <h4>Instructions:</h4>
+                    <p id="recipe-instructions"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="brkfast.js"></script>
+</body>
+</html>

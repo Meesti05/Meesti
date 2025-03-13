@@ -1,0 +1,245 @@
+/* General Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    background-color: #f8f8f8;
+}
+
+/* Navigation Bar */
+nav {
+    width: 80%;
+    position: absolute;
+    top: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 7px 20px;
+    background-color: rgba(69, 33, 48, 0.9);
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(255, 215, 0, 0.4);
+    z-index: 10;
+}
+
+.logo {
+    height: 60px;
+}
+
+.nav-links {
+    display: flex;
+    gap: 1.5rem;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.link {
+    text-decoration: none;
+    color: #FFD700;
+    font-size: 16px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.link:hover {
+    color: #ffb400;
+}
+
+/* Header Section */
+.salad-header {
+    background-image: url('images/bg.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 270px 20px;
+}
+
+.breakfast-title {
+    font-size: 3em;
+    margin-bottom: 20px;
+    color: #5c3d2e;
+    font-weight: 900;
+}
+
+.header-paragraph {
+    font-size: 1.2em;
+    color: #190e09;
+    font-weight: 700;
+}
+
+/* About Section */
+.about-salad {
+    width: 60%;
+    margin: 50px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-salad-content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.3);
+    text-align: center;
+}
+
+.about-salad h2 {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+}
+
+.about-salad p {
+    line-height: 1.5;
+    font-size: 0.9em;
+}
+
+/* Recipes Section */
+.recipes {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.recipes h2 {
+    font-size: 2.5em;
+    margin-bottom: 30px;
+}
+
+.recipe-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.recipe-card {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 300px;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.recipe-card:hover {
+    transform: translateY(-5px);
+}
+
+.recipe-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.recipe-card-content {
+    padding: 20px;
+    text-align: left;
+}
+
+.recipe-card-content h3 {
+    margin-bottom: 10px;
+}
+
+.recipe-card-content p {
+    color: #666;
+    line-height: 1.6;
+}
+
+/* Recipe Modal */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+/* Updated Modal Layout */
+.modal-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fefefe;
+    margin: 5% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 900px;
+    border-radius: 10px;
+}
+
+/* Video & Text Side-by-Side */
+.modal-recipe-details {
+    display: flex;
+    align-items: flex-start; /* Aligns items at the top */
+    justify-content: space-between;
+    gap: 20px;
+}
+
+/* Video Container */
+.modal-video-container {
+    width: 40%;
+}
+
+.modal-video-container video {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+    aspect-ratio: 9 / 16; /* Forces portrait mode */
+}
+
+/* Text Container */
+.modal-text-content {
+    width: 60%;
+    text-align: left;
+}
+
+.modal-text-content h3 {
+    margin-bottom: 10px;
+    font-size: 1.5em;
+}
+
+.modal-text-content h4 {
+    margin-top: 15px;
+    font-size: 1.2em;
+}
+
+.modal-text-content p {
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Close Button */
+.close-modal {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close-modal:hover,
+.close-modal:focus {
+    color: black;
+    text-decoration: none;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .modal-recipe-details {
+        flex-direction: column;
+    }
+
+    .modal-video-container,
+    .modal-text-content {
+        width: 100%;
+    }
+}

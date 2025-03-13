@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mid-Morning Magic - Flavors of the Day</title>
+    <link rel="stylesheet" href="brunch.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Roboto&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <img src="logo.png" alt="Logo" style="height: 60px;">
+        </div>
+        <ul class="nav-links">
+            <li><a href="/index.html" class="link">HOME</a></li>
+            <li><a href="/ABOUT/about.html" class="link">ABOUT</a></li>
+            <li><a href="#" class="link">LOGIN</a></li>
+        </ul>
+    </nav>
+    <header class="salad-header">
+        <h1>Mid-Morning Magic</h1>
+        <p>A flavorful stage trick, Where every bite sings, and moments tick</p>
+    </header>
+
+    <section class="about-salad">
+        <div class="about-salad-content">
+            <h2>About Brunch</h2>
+            <p><b>Brunch in India is a delightful fusion of flavors, blending traditional breakfast favorites with hearty lunch dishes. It’s the perfect mid-morning feast, bringing together crispy dosas with coconut chutney, spicy poha, or buttery parathas served with curd and pickle. A classic Indian brunch might also feature chole bhature, idli-sambar, or even stuffed kulchas with a refreshing glass of lassi or masala chai. The mix of sweet and savory is irresistible—think piping hot jalebis alongside fluffy dhoklas or a steaming bowl of suji halwa. Whether enjoyed at home with family or at a vibrant café, an Indian brunch is not just a meal but an experience filled with warmth, spices, and rich culinary heritage.</b></p>
+        </div>
+    </section>
+    
+
+    <section class="recipes">
+        <h2>Indian Salad Recipes</h2>
+        <div class="recipe-cards" id="recipe-cards">
+            </div>
+    </section>
+
+    <div id="recipe-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h3 id="recipe-name"></h3>
+            <h4>Ingredients:</h4>
+            <p id="recipe-ingredients"></p>
+            <h4>Instructions:</h4>
+            <p id="recipe-instructions"></p>
+        </div>
+    </div>
+    <script src="brunch.js"></script>
+</body>
+</html>

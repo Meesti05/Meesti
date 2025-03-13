@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feast of the Night - Flavors of the Day</title>
+    <link rel="stylesheet" href="dinner.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Roboto&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <img src="images/logo.png" alt="Logo" style="height: 60px;">
+        </div>
+        <ul class="nav-links">
+            <li><a href="/index.html" class="link">HOME</a></li>
+            <li><a href="/ABOUT/about.html" class="link">ABOUT</a></li>
+            <li><a href="#" class="link">LOGIN</a></li>
+        </ul>
+    </nav>
+    <header class="salad-header">
+        <h1>Feast of the Night</h1>
+        <p><b>The day's reward, flavors poured. Evening's embrace, taste restored</b></p>
+    </header>
+
+    <section class="about-salad">
+        <div class="about-salad-content">
+            <h2>Delicious Dinner </h2>
+            <p>Indian dinners are a delightful blend of flavors, colors, and aromas, reflecting the country’s rich culinary heritage. A traditional meal is often a perfect balance of taste and nutrition, featuring a mix of grains, lentils, vegetables, and aromatic spices. From light and comforting options to elaborate feasts, Indian dinners cater to every mood and occasion. Accompaniments like pickles, chutneys, and yogurt enhance the experience, while a variety of breads and rice dishes complete the spread. Whether it’s a simple home-cooked meal or a grand festive spread, Indian dinners bring warmth, togetherness, and a true celebration of taste. </p> </section>
+    
+
+    <section class="recipes">
+        <h2>Indian Dinner Recipes</h2>
+        <div class="recipe-cards" id="recipe-cards">
+            </div>
+    </section>
+
+    <div id="recipe-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h3 id="recipe-name"></h3>
+            <h4>Ingredients:</h4>
+            <p id="recipe-ingredients"></p>
+            <h4>Instructions:</h4>
+            <p id="recipe-instructions"></p>
+        </div>
+    </div>
+    <script src="dinner.js"></script>
+</body>
+</html>
